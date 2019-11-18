@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sistemas Humanos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel= "icon" href="imgs/icone.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Sistemas Humanos</h1>
+      <nav>
+        <ul>
+          <li class ='selecionado'><a href="index.html">Inicial</a></li>
+          <li><a href="index2.html">Cardíaco</a></li>
+          <li><a href="index3.html">Digestório </a></li>
+          <li><a href="index4.html">Respiratório</a></li>
+          <li><a href="#" id="criadoras">Criadoras</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class='inicial'>
+        <p>Bem vindos, este site tem o intuito de fazer com que vocês aprendam um pouco mais sobre os sistemas do corpo humano.<br>
+        <p>Reservamos um menu acima para que vocês possam ter acesso a uma explicação de alguns sistemas e de suas funções.
+          Além disso, nesse menu vocês também tem acesso a uma aba onde pode saber um pouco sobre nós, criadoras desta iniciativa.</p>
+        <p>Logo abaixo temos um jogo da memória para você se divertir, bom jogo. </p>
+
+        <label>Nome: <input id="nome" type="text"></label>
+        <button id="add">Inserir</button>
+      </section>
+      <button id='botao' type="button" name="button">Jogar</button>
+
+      <div id="jogadores">
+      <section id= 'jogo' class='jogo-memoria'>
+        <div class="carta" data-framework="cerebro">
+          <img class="face-carta" src="imgs/cerebro.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="cerebro">
+          <img class="face-carta" src="imgs/cerebro.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="coracao">
+          <img class="face-carta" src="imgs/coracao.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="coracao">
+          <img class="face-carta" src="imgs/coracao.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="estomago">
+          <img class="face-carta" src="imgs/estomago.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="estomago">
+          <img class="face-carta" src="imgs/estomago.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="osso">
+          <img class="face-carta" src="imgs/osso.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="osso">
+          <img class="face-carta" src="imgs/osso.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="pulmao">
+          <img class="face-carta" src="imgs/pulmao.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="pulmao">
+          <img class="face-carta" src="imgs/pulmao.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="rim">
+          <img class="face-carta" src="imgs/rim.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+        <div class="carta" data-framework="rim">
+          <img class="face-carta" src="imgs/rim.png" >
+          <img class="verso-carta" src="imgs/fundo.png" >
+        </div>
+
+
+      </section>
+
+      <div id="janelamodal" class="modal">
+          <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Criadoras</h2>
+          <img src="imgs/autoras.jpeg" alt="">
+          <h3>Hellen Beatriz</h3>
+          <div>
+            <p>Aluna de Redes de Computadores que não se identifica com o curso,
+              uma chorona de carteirinha, mamãe da Pipoca e namorada do Bruno de MCT 3.</p>
+              <p>P.S.: A única que possui namorado do grupo</p>
+          </div>
+          <h3>Isadora do Carmo</h3>
+          <div>
+            <p>Desmontadora de computador oficial do grupo, ama o curso de redes como
+              ama tocar flauta e tem uma garrafinha da tupperware azul</p>
+          </div>
+          <h3>Letícia Vitória</h3>
+          <div>
+            <p>Dorminhoca, odeia todo mundo, mamãe do Jack e da Chani, 17 anos e de Ibiritexas</p>
+            <p>"Só dorme e quando acorda é pra falar merda!" SANTOS, Derik - 2019</p>
+          </div>
+          <h3>Maria Fernanda</h3>
+          <div >
+            <p>Mora em Raposos City, usa 'cabelo boi lambeu' e fala pra caramba que nem
+              a Letícia aguenta, só a Clara</p>
+          </div>
+
+          </div>
+          </div>
+    </main>
+    <script src="jquery.js"></script>
+    <script src="jogo.js"></script>
+    <script type="text/javascript" src="autores.js"></script>
+
+
+  </body>
+
+</html>
