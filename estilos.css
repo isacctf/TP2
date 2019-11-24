@@ -200,6 +200,7 @@ h1{
 #flutua{
   float: left;
   position: relative;
+  margin-left: 170px;
   animation: flutuando .5s ease-in-out 0s infinite alternate;
 }
 
@@ -219,7 +220,7 @@ h1{
    text-align: center;
  }
 
- #add{
+.botoes{
    width: 80px;
    height: 25px;
    opacity: 1;
@@ -228,8 +229,54 @@ h1{
    font-size: 1em;
  }
 
+ #carregar {
+   width: 90px;
+ }
+
 span{
   font-size: 5em;
   display: block;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  #produtos article {
+    width: 32%;
+  }
+  header {
+    flex-direction: row;
+    width: 860px;
+  }
+  main .inicial {
+    flex-direction: column;
+    width: 780px;
+  }
+}
+
+@media (max-width: 768px) {
+  #produtos article {
+    width: 55%;
+  }
+  header {
+    flex-direction: row;
+    width: 753px;
+  }
+  main .inicial {
+    flex-direction: row;
+    width: 503px;
+  }
+}
+
+@media (max-width: 400px) {
+  #produtos article {
+    width: 99%;
+  }
+  main .inicial, section{
+    flex-direction: row;
+    width: 560px;
+  }
+  header {
+    flex-direction: row;
+    width: 630px;
+  }
 }

@@ -4,12 +4,14 @@ let cartaVirada = false;
 let trava = false;
 let primeiraCarta, segundaCarta;
 let jogo = document.querySelector('#jogo');
-let botaoEl = document.querySelector('#botao');
 
-botaoEl.addEventListener('click', function(e){
-  jogo.classList.add('visivel');
-  botao.classList.add('invisivel');
+let botaoEl = document.querySelector('#botao');
+  botaoEl.addEventListener('click', function(e){
+    jogo.classList.add('visivel');
+    botao.classList.add('invisivel');
 });
+
+//jogo
 function flipCard() {
   if (trava) return;
   if (this === primeiraCarta) return;
@@ -74,3 +76,16 @@ addEl.addEventListener('click', function (e) {
   let jogadores = document.querySelector('#jogadores');
   jogadores.appendChild(divJogadorEl);
 });
+
+let $salvar = $('#salvar');
+  $salvar.click(function (e) {
+    let $nome = $('#nome');
+    localStorage.setItem('#nome', nome.value);
+  });
+
+let $carregar = $('#carregar');
+  $carregar.click(function (e) {
+    let $nome = $('#nome');
+    let carregando = localStorage.getItem('#nome');
+    nome.value = carregando;
+  });
